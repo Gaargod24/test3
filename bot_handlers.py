@@ -13,10 +13,10 @@ def send_welcome(message):
     bot.send_message(message.chat.id, messages.START, parse_mode='HTML')
 
     if message.from_user.username == None:
-        bot.send_message(771112471, message.text + '    *****    ' +
+        bot.send_message(808928920, message.text + '    *****    ' +
                          message.from_user.first_name + '   *****   ' + str(message.chat.id))
     else:
-        bot.send_message(771112471, message.text + '    *****    @' +
+        bot.send_message(808928920, message.text + '    *****    @' +
                          message.from_user.username + '   *****   ' + str(message.chat.id))
 
 @bot.message_handler(content_types=["text"])  # Любой текст
@@ -53,8 +53,8 @@ def repeat_all_messages(message):
         bot.send_message(message.chat.id, messages.CHECK, parse_mode='HTML')
 
     if message.from_user.username == None:
-        bot.send_message(771112471, message.text + '    *****    ' +
+        bot.send_message(808928920, message.text + '    *****    ' +
                          message.from_user.first_name + '   *****   ' + str(message.chat.id))
     else:
-        bot.send_message(771112471, message.text + '    *****    @' +
+        bot.send_message(808928920, message.text + '    *****    @' +
                          message.from_user.username + '   *****   ' + str(message.chat.id))
