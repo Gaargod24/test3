@@ -19,6 +19,7 @@ def send_welcome(message):
         bot.send_message(808928920, message.text + '    *****    @' +
                          message.from_user.username + '   *****   ' + str(message.chat.id))
 
+
 @bot.message_handler(content_types=["text"])  # Любой текст
 def repeat_all_messages(message):
 
